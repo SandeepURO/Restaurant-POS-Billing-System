@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Restaurant POS | Billing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">R</div>
+        <div class="brand-text">
+          <h1>RestroPoint</h1>
+          <p>Billing Console</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <button class="nav-item active">Billing</button>
+        <button class="nav-item">Orders</button>
+        <button class="nav-item">Tables</button>
+        <button class="nav-item">Reports</button>
+        <button class="nav-item">Settings</button>
+      </nav>
+      <div class="sidebar-footer">
+        <p>Shift: Evening</p>
+        <p>Cashier: Sandeep</p>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div>
+          <h2>Billing</h2>
+          <p class="subtitle">Fast & clean restaurant checkout</p>
+        </div>
+      </header>
+
+      <section class="content">
+        <!-- Menu -->
+        <section class="menu-panel">
+          <div class="category-chips">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="starters">Starters</button>
+            <button class="chip" data-filter="mains">Mains</button>
+            <button class="chip" data-filter="desserts">Desserts</button>
+            <button class="chip" data-filter="drinks">Drinks</button>
+          </div>
+         <div class="menu-grid">
+
+      <!-- ITEM 1 -->
+<article class="menu-card"
+  data-id="pizza"
+  data-name="Margherita Pizza"
+  data-price="280"
+  data-category="mains">
+
+
+        <div class="menu-image">
+          <img src="Margherita-pizza.jpeg" alt="Margherita Pizza">
+        </div>
+
+        <div class="menu-card-body">
+          <h3>Margherita Pizza</h3>
+          <p class="short">Cheese & basil</p>
+
+          <div class="menu-info">
+            Fresh mozzarella, tomato sauce, basil leaves, olive oil
+          </div>
+        </div>
+
+        <div class="menu-card-footer">
+          <span>₹280</span>
+          <button class="btn-icon add-to-bill">+</button>
+        </div>
+      </article>
+
+      <!-- ITEM 2 -->
+      <article class="menu-card"
+        data-id="paneer"
+        data-name="Paneer Tikka"
+        data-price="220"
+  data-category="starters">
+
+        <div class="menu-image">
+          <img src="panner-thikka.jpeg" alt="Panner Tikka">
+        </div>
+
+        <div class="menu-card-body">
+          <h3>Paneer Tikka</h3>
+          <p class="short">Smoky grilled paneer</p>
+
+          <div class="menu-info">
+            Marinated cottage cheese, spices, grilled to perfection
+          </div>
+        </div>
+
+        <div class="menu-card-footer">
+          <span>₹220</span>
+          <button class="btn-icon add-to-bill">+</button>
+        </div>
+      </article>
+
+      <!-- ITEM 3 -->
+      <article class="menu-card"
+        data-id="biryani"
+        data-name="Veg Biryani"
+        data-price="260"
+         data-category="mains">
+
+        <div class="menu-image">
+          <img src="veg-biriyani.jpeg" alt="Veg Biryani">
+        </div>
+
+        <div class="menu-card-body">
+          <h3>Veg Biryani</h3>
+          <p class="short">Served with raita</p>
+
+          <div class="menu-info">
+            Aromatic basmati rice, vegetables, Indian spices
+          </div>
+        </div>
+
+        <div class="menu-card-footer">
+          <span>₹260</span>
+          <button class="btn-icon add-to-bill">+</button>
+        </div>
+      </article>
+      <!-- STARTERS -->
+<article class="menu-card" data-id="veg-manchurian" data-name="Veg Manchurian" data-price="180" data-category="starters">
+     <div class="menu-image">
+          <img src="veg-manchurian.jpeg" alt="Veg Biryani">
+        </div>
+  <div class="menu-card-body">
+    <h3>Veg Manchurian</h3>
+    <p class="short">Crispy & spicy</p>
+    <div class="menu-info">
+           Deep-fried vegetable balls tossed in spicy Indo-Chinese sauce.          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹180</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<article class="menu-card" data-id="spring-roll" data-name="Spring Roll" data-price="160" data-category="starters">
+     <div class="menu-image">
+          <img src="spring-roll.jpeg" alt="Veg Biryani">
+        </div>
+    <div class="menu-card-body">
+    <h3>Spring Roll</h3>
+    <p class="short">Veg stuffed rolls</p>
+    <div class="menu-info">
+           Crispy rolls filled with seasoned vegetables and herbs.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹160</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<!-- MAINS -->
+
+
+<article class="menu-card" data-id="paneer-butter" data-name="Paneer Butter Masala" data-price="240"data-category="mains">
+ 
+        <div class="menu-image">
+          <img src="panner-butter-masala.jpeg" alt="Veg Biryani">
+        </div>
+    <div class="menu-card-body">
+    <h3>Paneer Butter Masala</h3>
+    <p class="short">Rich creamy gravy</p>
+    <div class="menu-info">
+           Rich and creamy tomato-based curry with soft paneer cubes and butter.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹240</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<article class="menu-card" data-id="dal-tadka" data-name="Dal Tadka" data-price="180" data-category="mains">
+  
+        <div class="menu-image">
+          <img src="dal-tadka.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Dal Tadka</h3>
+    <p class="short">Classic Indian dal</p>
+    <div class="menu-info">
+           Yellow lentils tempered with ghee, garlic, cumin, and red chillies.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹180</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<!-- ROTI / RICE -->
+<article class="menu-card" data-id="butter-naan" data-name="Butter Naan" data-price="50" data-category="mains">
+  
+        <div class="menu-image">
+          <img src="butter-naan.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Butter Naan</h3>
+    <p class="short">Soft & buttery</p>
+    <div class="menu-info">
+           Soft Indian flatbread brushed with fresh butter.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹50</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<article class="menu-card" data-id="jeera-rice" data-name="Jeera Rice" data-price="140" data-category="mains">
+  
+        <div class="menu-image">
+          <img src="jeera-rice.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Jeera Rice</h3>
+    <p class="short">Cumin flavored rice</p>
+    <div class="menu-info">
+           Light, fluffy basmati rice sautéed with jeera, ghee, and whole spices.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹140</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<!-- DRINKS -->
+<article class="menu-card" data-id="cold-coffee" data-name="Cold Coffee" data-price="140" data-category="drinks">
+  
+        <div class="menu-image">
+          <img src="coffee.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Cold Coffee</h3>
+    <p class="short">Chilled & creamy</p>
+    <div class="menu-info">
+            Chilled coffee blended with milk and ice cream for a smooth, refreshing taste.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹140</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<article class="menu-card" data-id="masala-chai" data-name="Masala Chai" data-price="40" data-category="drinks">
+  
+        <div class="menu-image">
+          <img src="tea.jpg.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Masala Chai</h3>
+    <p class="short">Indian spiced tea</p>
+    <div class="menu-info">
+            Traditional Indian tea brewed with milk, spices, and herbs.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹40</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<article class="menu-card" data-id="fresh-lime" data-name="Fresh Lime Soda" data-price="80" data-category="drinks">
+  
+        <div class="menu-image">
+          <img src="soda.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Fresh Lime Soda</h3>
+    <p class="short">Sweet or salted</p>
+    <div class="menu-info">
+           Fizzy lime drink with a perfect balance of sweet and salt.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹80</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<!-- DESSERTS -->
+<article class="menu-card" data-id="gulab-jamun" data-name="Gulab Jamun" data-price="90" data-category="desserts">
+  
+        <div class="menu-image">
+          <img src="gulab-jamun.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Gulab Jamun</h3>
+    <p class="short">2 pcs, warm</p>
+    <div class="menu-info">
+            Soft milk-based dumplings soaked in warm sugar syrup.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹90</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<article class="menu-card" data-id="ice-cream" data-name="Vanilla Ice Cream" data-price="70" data-category="desserts">
+  
+        <div class="menu-image">
+          <img src="vanilla-ice-cream.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Vanilla Ice Cream</h3>
+    <p class="short">Single scoop</p>
+    <div class="menu-info">
+            Smooth and creamy classic vanilla served chilled.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹70</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+<article class="menu-card" data-id="brownie" data-name="Chocolate Brownie" data-price="120" data-category="desserts">
+  
+        <div class="menu-image">
+          <img src="chocolate-browine.jpg.jpeg" alt="Veg Biryani">
+        </div>
+        <div class="menu-card-body">
+    <h3>Chocolate Brownie</h3>
+    <p class="short">With choco sauce</p>
+    <div class="menu-info">
+           Dense, gooey brownie with deep chocolate flavor and a slightly crisp top.
+          </div>
+  </div>
+  <div class="menu-card-footer">
+    <span class="price">₹120</span>
+    <button class="btn-icon add-to-bill">+</button>
+  </div>
+</article>
+
+
+    </div>
+  </section>
+</section>
+
+        <!-- Bill -->
+        <aside class="bill-panel">
+          <h3>Current Bill</h3>
+          <div class="empty-bill" id="emptyBill">
+            <p>No items added</p>
+            <span>Select items from menu</span>
+          </div>
+          <div class="customer-info">
+            <input type="text" id="customerName" placeholder="Customer Name" />
+            <input type="tel" id="customerPhone" placeholder="Phone Number" />
+          </div>
+          <div id="billItemsContainer" class="bill-items"></div>
+          <div class="bill-summary">
+            <div><span>Subtotal</span><span id="subtotalAmount">₹0</span></div>
+            <div><span>GST (5%)</span><span id="taxAmount">₹0</span></div>
+            <div><span>Service (5%)</span><span id="serviceAmount">₹0</span></div>
+            <div class="total"><span>Total</span><span id="totalAmount">₹0</span></div>
+          </div>
+          <button class="btn-ghost print-btn">Print Bill</button>
+          <button class="btn-primary">Confirm Payment</button>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <script src="billing.js"></script>
+</body>
+</html>
