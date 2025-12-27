@@ -21,6 +21,10 @@ A modern **Restaurant Billing / POS Web Application** built using
 
 ## 📸 Preview
 > ![SCREENSHOT-WEBPAGE](image.png)
+ 
+## 🚀 Live Demo
+🔗 https://restaurant-pos-billing-system.netlify.app/
+
 
 ## 👤 Author
 **Sandeep Kumar**  
